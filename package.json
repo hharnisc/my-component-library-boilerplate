@@ -2,20 +2,26 @@
   "name": "my-component-library-boilerplate",
   "version": "0.0.1",
   "description": "A Component Library Boilerplate",
-  "main": "index.js",
+  "main": "lib/index.js",
   "repository": "git@github.com:hharnisc/my-component-library-boilerplate.git",
   "author": "Harrison Harnisch <hharnisc@gmail.com>",
   "license": "MIT",
   "private": false,
   "devDependencies": {
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
-    "@storybook/react": "^3.2.17",
     "@storybook/addon-actions": "^3.2.17",
-    "@storybook/addon-links": "^3.2.17"
+    "@storybook/addon-links": "^3.2.17",
+    "@storybook/react": "^3.2.17",
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-export-extensions": "^6.22.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
   },
   "scripts": {
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "build": "babel src -d lib",
+    "prepublish": "babel src -d lib"
   }
 }
