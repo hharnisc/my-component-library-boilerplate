@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshots Text default 1`] = `
+<span
+  style={
+    Object {
+      "fontSize": "1rem",
+    }
+  }
+>
+  oh hey!
+</span>
+`;
+
+exports[`Snapshots Text size=0.5 1`] = `
+<span
+  style={
+    Object {
+      "fontSize": "0.5rem",
+    }
+  }
+>
+  Rems = 0.5 = small
+</span>
+`;
+
+exports[`Snapshots Text size=3 1`] = `
+<span
+  style={
+    Object {
+      "fontSize": "3rem",
+    }
+  }
+>
+  Rems = 3 = huge
+</span>
+`;
